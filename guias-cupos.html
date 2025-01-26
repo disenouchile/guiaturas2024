@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#1f5592" />
+        <meta name="author" content="Felipe Alberto Cortez Orellana" />
+        <title>DISEÑO — GUIATURAS</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body class="bg-light">
+        <nav class="fixed-top bg-light" style="opacity: 0.95;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <div class="row align-items-center">
+                            <div class="col-6 py-3">
+                                <h1 class="float-start fs-6 m-0 p-0">DISEÑO — GUIATURAS</h1>
+                            </div>
+                            <div class="col-6 py-3">
+                                <select class="form-select form-select-sm w-75 float-end m-0 py-1 px-2" onchange="location = this.value;">
+                                    <option value="#">MENÚ</option>
+                                    <option value="index.html">Abecé</option>
+                                    <option value="calificaciones.html">Calificaciones</option>
+                                    <option value="comisiones.html">Comisiones</option>
+                                    <option value="fechas.html">Fechas</option>
+                                    <option value="guias.html">Guías</option>
+                                    <option value="memorias.html">Memorias</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                    <h2 class="display mt-5 mb-4"><a href="guias.html" class="link-secondary link-opacity-75 link-offset-0 link-underline-opacity-25 link-underline-opacity-75-hover">Guías</a> con cupos</h2>
+
+                    <div id="aviso"></div>
+
+                    <p>El <a href="https://fau.uchile.cl/dam/jcr:3f7b4e53-cea0-48fe-9f31-8e1991e21d29/Dise%EF%BF%BDo_v4.pdf" target="_blank" class="link-dark">reglamento de nuestro plan de estudios</a> establece que:</p>
+
+                    <p class="text-body-secondary border-start border-2 ps-3 py-1">
+                        [El trabajo tutelado de Seminario de Licenciatura se desarrolla] bajo <em>la dirección de</em> un(a) académico(a) con jerarquía de
+                        <em>Profesor(a) adscrito al Departamento de Diseño o a la Escuela de Pregrado</em> que haya desarrollado investigación relacionada con el tema abordado (Art. 9).
+                    </p>
+
+                    <p class="text-body-secondary border-start border-2 ps-3 py-1">[Para Profesor(a) Guía de Proyecto de Título deben respetarse] los mismos criterios definidos en artículo 9 (Art 27).</p>
+
+                    <p>A continuación se indican las alternativas de Prof. Guía para iniciar Seminario de Título o Proyecto de título en segundo semestre de 2024, actualizadas el viernes 16 de agosto:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                    <h3 class="text-center fs-4 mt-5 mb-3">Son <span id="profesensem"></span> para Seminario de Licenciatura I</h3>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" id="sem"></div>
+            <div class="row">
+                <div class="col-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                    <h3 class="text-center fs-4 mt-5 mb-3">Son <span id="profesentit"></span> para Proyecto de Título I</h3>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" id="tit"></div>
+            <div class="pt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                            <p class="small d-flex justify-content-between align-items-center text-body-secondary">
+                                <span><span class="d-none d-lg-inline">Desarrollado por </span><a href="https://faco.cl/profesor/" target="_blank" class="link-secondary" title="Felipe Alberto Cortez Orellana">FACO</a></span>
+                                <span><a href="mailto:coordinacion.titulo.diseno@uchilefau.cl" class="link-secondary">coordinacion.titulo.diseno@uchilefau.cl</a></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"
+            integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script>
+            document.addEventListener("scroll", (event) => {
+                document.querySelector("nav").classList.add("shadow-sm");
+            });
+
+            document.addEventListener("scrollend", (event) => {
+                var y = window.scrollY;
+                if (y == 0) {
+                    document.querySelector("nav").classList.remove("shadow-sm");
+                }
+            });
+
+            var todos = [];
+            var soloSeminario = [];
+            var soloTitulo = [];
+            var todosOK;
+            var soloSeminarioOK;
+            var soloTituloOK;
+
+            const los_seminarios = document.querySelector("#sem");
+            const los_titulos = document.querySelector("#tit");
+            
+            const nro_seminarios = document.querySelector("#profesensem");
+            const nro_titulos = document.querySelector("#profesentit");
+
+
+            Papa.parse("https://raw.githubusercontent.com/disenoUChile/guiaturas/main/data/data-a-mano.csv", {
+                download: true,
+                header: true,
+                complete: function (results) {
+                    console.log(results.data);
+                    results.data.forEach((d) => {
+                        if (d.id !== "—") {
+                            todos.push(d);
+                        }
+                        if (d.id !== "—" && d.cupos_sem > 0) {
+                            soloSeminario.push(d);
+                        }
+                        if (d.id !== "—" && d.cupos_tit > 0) {
+                            soloTitulo.push(d);
+                        }
+                    });
+
+                    todosOK = todos.slice(0, -1);
+
+                    console.log(todosOK);
+
+
+
+                    //UNA FUNCIÓN QUE PREFIERO DEJAR ACÁ
+
+                    function construye(data) {
+                        soloSeminario.forEach((d) => {
+                            los_seminarios.innerHTML += `
+                            <article class="col my-3 ${claseRol(d.nivel)}">
+                                <div class="card shadow-sm h-100 rounded-0 border-light-subtle">
+                                  <div class="card-header">
+                                    <h1 class="fs-5 mt-2">${nombre(d.name)}</h1>
+                                    <p>${d.nivel} ${d.adscripcion}</p>
+                                    <p>${link(d.perfil)}</p>
+                                  </div>
+                                  <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><p class='text-body-secondary mb-3' style="min-height:6rem">${d.descriptor}</p></li>
+                                  </ul>
+                                </div>
+                              </article>`;
+                        });
+                        soloTitulo.forEach((d) => {
+                            los_titulos.innerHTML += `
+                            <article class="col my-3 ${claseRol(d.nivel)}">
+                                <div class="card shadow-sm h-100">
+                                  <div class="card-header">
+                                    <h1 class="fs-5 mt-2">${nombre(d.name)}</h1>
+                                    <p>${d.nivel} ${d.adscripcion}</p>
+                                    <p>${link(d.perfil)}</p>
+                                  </div>
+                                  <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><p class='text-body-secondary mb-3' style="min-height:6rem">${d.descriptor}</p></li>
+                                  </ul>
+                                </div>
+                              </article>`;
+                        });
+
+                        nro_seminarios.innerHTML = soloSeminario.length;
+
+                        nro_titulos.innerHTML = soloTitulo.length;
+
+                    }
+
+                    construye(todosOK);
+                },
+            });
+
+            //OTRAS FUNCIONES, PARA AJUSTAR ALGUNAS COSAS
+
+            function nombre(x) {
+                let nombreCompleto = x.split(",");
+                return nombreCompleto[1] + " " + nombreCompleto[0];
+            }
+
+            function link(x) {
+                if (x.includes("Sin perfil")) {
+                    return "<small class='text-body-secondary'>Sin perfil en Portafolio Académico</small>";
+                } else {
+                    return (
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16"><path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"/><path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z"/></svg> <a href="' +
+                        x +
+                        '" class="small link-dark link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Ver perfil en Portafolio Académico</a>'
+                    );
+                }
+            }
+
+            function claseRol(x) {
+                if (x.includes("Prof.") || x.includes("jerarquización")) {
+                    return "guia-1";
+                } else {
+                    return "guia-2 d-none";
+                }
+            }
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#1f5592" />
+        <meta name="author" content="Felipe Alberto Cortez Orellana" />
+        <title>DISEÑO — GUIATURAS</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body class="bg-light">
+        <nav class="fixed-top bg-light" style="opacity: 0.95;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <div class="row align-items-center">
+                            <div class="col-6 py-3">
+                                <h1 class="float-start fs-6 m-0 p-0">DISEÑO — GUIATURAS</h1>
+                            </div>
+                            <div class="col-6 py-3">
+                                <select class="form-select form-select-sm w-75 float-end m-0 py-1 px-2" onchange="location = this.value;">
+                                    <option value="#">MENÚ</option>
+                                    <option value="index.html" selected>Abecé</option>
+                                    <option value="calificaciones.html">Calificaciones</option>
+                                    <option value="comisiones.html">Comisiones</option>
+                                    <option value="fechas.html">Fechas</option>
+                                    <option value="guias.html">Guías</option>
+                                    <option value="memorias.html">Memorias</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                    <h2 class="display mt-5 mb-4">Abecé</h2>
+
+                    <p>Coordinación de Título colabora con la Jefatura de la Carrera de Diseño en asuntos relacionados con Seminarios de Licenciatura y Proyectos de Título.</p>
+
+                    <p>Para contactar a esta Coordinación, escriba a &lt;<a href="mailto:coordinacion.titulo.diseno@uchilefau.cl" class="link-dark">coordinacion.titulo.diseno@uchilefau.cl</a>&gt;. Si usted es estudiante o egresado(a), por favor escriba a Coordinación con copia a su Profesor(a) Guía.</p>
+
+                    <p>Cada estudiante o egresado(a) contará con su Profesor(a) Guía después de activar su matrícula e inscribir la asignatura que le corresponda cursar, siempre respetando los procedimientos que establezca la Jefatura de Carrera.</p>
+
+                    <p>Cada estudiante, egresado(a) y Profesor(a) Guía encontrará en este sitio web información sobre <a href="fechas.html" class="link-dark">fechas</a>, formatos de <a href="memorias.html" class="link-dark">informe final o memoria</a>, y protocolos de <a href="calificaciones.html" class="link-dark">calificación</a> (que en la mayoría de los casos involucra a una <a href="comisiones.html" class="link-dark">comisión</a>).</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <p class="small d-flex justify-content-between align-items-center text-body-secondary">
+                            <span>
+                                <span class="d-none d-lg-inline">Desarrollado por </span>
+                                <a href="https://faco.cl/profesor/" target="_blank" class="link-secondary" title="Felipe Alberto Cortez Orellana">FACO</a>
+                            </span>
+                            <span>
+                                <a href="mailto:coordinacion.titulo.diseno@uchilefau.cl" class="link-secondary">coordinacion.titulo.diseno@uchilefau.cl</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener("scroll", (event) => {
+                document.querySelector("nav").classList.add("shadow-sm");
+            });
+            document.addEventListener("scrollend", (event) => {
+                var y = window.scrollY;
+                if (y == 0) {
+                    document.querySelector("nav").classList.remove("shadow-sm");
+                }
+            });
+        </script>
+    </body>
+</html>
